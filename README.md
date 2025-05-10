@@ -101,6 +101,7 @@ WHERE category = 'Clothing'
 AND quantiy >= 4
 AND FORMAT(sale_date,'yyyy-MM') ='2022-11';
 
+3.
 SELECT 
 		category,
 		SUM(quantiy * price_per_unit) AS Total_sale
@@ -156,7 +157,7 @@ GROUP BY
 	WHERE Sales_Rank=1;
 
 
-	--Q8: Write the SQL query to find top 5 best customer based on the highest total sale?
+--Q8: Write the SQL query to find top 5 best customer based on the highest total sale?
 SELECT TOP(5) 
     customer_id,
     SUM(total_sale) AS t_sale
